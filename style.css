@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    font-family: 'Source Code Pro', monospace;
+    box-sizing: border-box;
+    color: white;
+}
+body {
+    background-color: #161322;
+}
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital@1&display=swap');    
+
+/* HEADER */
+
+#fundo {
+    background: url(./img/fundo.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    background-attachment: fixed ;
+    box-shadow: 3px 3px 3px 3px black;
+}
+#fundo h1 {
+    margin:auto;
+    background-color: black;
+    color: wheat;
+    padding: 7px;
+    font-size: 50px;
+}
+#fundo h1 span {    
+    color: #EC4C1A;    
+}
+
+/*PADRAO*/
+
+
+
+.img {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    aspect-ratio: 40/5;
+}
+.links img{
+    width: 4vw;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 20vh;
+    justify-self: center;
+    text-align: center;
+}
+.links #text{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-self: end;
+    margin-bottom: 0;
+}
+
+
+.img video {   
+    height: 42vh;
+    justify-self: end;
+}
+.title {
+    margin-top: 3vh;
+}
+
+.text {
+    margin-top: 3vh;
+}
+.tag {
+    margin-top: 2vh;
+    color: #618B3F;
+    font-size: 20px;
+}
+.links #youtube {
+    margin-left: 2vw;
+}
+.img iframe {
+    margin-top: 10vh;
+}
+.img img {
+    width: 30vw;
+    border-radius: 20px;
+}
+/* INFLUENCER */
+#influencer .title h1 {
+    color: #EC4C1A;
+}
+#influencer {
+    display: grid;
+    grid-template-columns: auto auto auto;    
+    justify-self: center;
+    background: url(img/influencer.svg) no-repeat;
+    background-color: #231E35;
+    grid-template-rows:  auto auto;
+    text-align: center;
+    margin-top: 4vh;
+}
+/* div {
+    border: 3px solid red;
+} */
+/* YOUTUBE */
+#youtube .title h1 {
+    color: #92EB68;
+}
+#youtube .links img {
+    margin-left: 1vw;
+}
+#youtube {
+    display: grid;
+    grid-template-columns: auto auto auto;    
+    justify-self: center;
+    background: url(img/youtube.svg) no-repeat;
+    background-color: #231E35;
+    grid-template-rows:  auto auto;
+    text-align: center;
+    margin-top: 4vh;
+}
+
+/*CONTEÚDO*/
+#content {
+    display: grid;
+    grid-template-columns: auto auto auto;    
+    justify-self: center;
+    background: url(img/navegador.svg) no-repeat;
+    background-color: #231E35;
+    grid-template-rows:  auto auto;
+    text-align: center;
+    margin-top: 4vh;
+}
+#content .title h1 {
+    color: #6EB9D9;
+}
+.links img {
+    border-radius: 10px;
+}
+#content .img img {
+    width: 30vw;
+    margin-top: 3vh;
+    border-radius: 20px;
+}
+/* TUTORIAL */
+#tutorial {
+    display: grid;
+    grid-template-columns: auto auto auto;    
+    justify-self: center;
+    background: url(img/code.svg) no-repeat;
+    background-color: #231E35;
+    grid-template-rows:  auto auto;
+    text-align: center;
+    margin-top: 4vh;
+}
+#tutorial .title h1 {
+    color: #B168EB;
+}
+#tutorial .img img {
+    margin-top: 7vh;
+
+}
