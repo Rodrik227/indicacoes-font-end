@@ -44,6 +44,9 @@ body {
     grid-row-end: 4;
 }
 .links img{
+    width: 7vw;
+}
+.links .influencer {
     width: 4vw;
 }
 
@@ -83,7 +86,15 @@ body {
     color: #618B3F;
     font-size: 25px;
 }
-
+.body .div {
+    display: grid;
+    grid-template-columns: auto auto auto;    
+    justify-self: center;
+    background-size: contain;
+    grid-template-rows:  auto auto;
+    text-align: center;
+    margin-top: 4vh;
+}
 
 .img img {
     width: 30vw;
@@ -94,23 +105,13 @@ body {
     color: #EC4C1A;
 }
 #influencer {
-    display: grid;
-    grid-template-columns: auto auto auto;    
-    justify-self: center;
     background: url(img/influencer.svg) no-repeat;
-    background-size: contain;
     background-color: #231E35;
-    grid-template-rows:  auto auto;
-    text-align: center;
-    margin-top: 4vh;
 }
 .links {
     display: grid;
     grid-template-columns: auto auto;
 }
-/* div {
-    border: 3px solid red;
-} */
 /* YOUTUBE */
 #youtube .title h1 {
     color: #92EB68;
@@ -119,18 +120,8 @@ body {
     margin-left: 1vw;
 }
 #youtube {
-    display: grid;
-    grid-template-columns: auto auto auto;    
-    justify-self: center;
     background: url(img/youtube.svg) no-repeat;
-    background-size: contain;
     background-color: #231E35;
-    grid-template-rows:  auto auto;
-    text-align: center;
-    margin-top: 4vh;
-}
-.links {
-    background: none;
 }
 .img iframe {
     margin-top: 5vh;
@@ -138,15 +129,8 @@ body {
 
 /*CONTEÚDO*/
 #content {
-    display: grid;
-    grid-template-columns: auto auto auto;    
-    justify-self: center;
     background: url(img/navegador.svg) no-repeat;
-    background-size: contain;
     background-color: #231E35;
-    grid-template-rows:  auto auto;
-    text-align: center;
-    margin-top: 4vh;
 }
 
 #content .title h1 {
@@ -162,15 +146,8 @@ body {
 }
 /* TUTORIAL */
 #tutorial {
-    display: grid;
-    grid-template-columns: auto auto auto;    
-    justify-self: center;
     background: url(img/code.svg) no-repeat;
-    background-size: contain;
     background-color: #231E35;
-    grid-template-rows:  auto auto;
-    text-align: center;
-    margin-top: 4vh;
 }
 
 #tutorial .title h1 {
@@ -190,15 +167,8 @@ body {
 
 /* PODCAST */
 #podcast {
-    display: grid;
-    grid-template-columns: auto auto auto;    
-    justify-self: center;
     background: url(img/music.svg) no-repeat;
-    background-size: contain;
     background-color: #231E35;
-    grid-template-rows:  auto auto;
-    text-align: center;
-    margin-top: 4vh;
 }
 #podcast .title h1 {
     color: #E42F2F;
@@ -236,5 +206,23 @@ body {
   }
   /* CELULAR */
   @media(max-width: 480px) {
-    
-  }
+    .body .div {
+        display: list-item;
+        justify-self: center;
+        background-size: contain;
+        text-align: center;
+        margin-top: 4vh;
+    }
+    #fundo{
+        text-align: center;
+    }
+    .img iframe{
+        width: fit-content;
+    }
+    * {
+        overflow-x: hidden;
+    }
+    .text {
+        margin-left: 16vw;
+    }
+  }     
