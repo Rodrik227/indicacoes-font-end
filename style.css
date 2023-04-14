@@ -201,7 +201,7 @@ body {
     margin-top: 4vh;
 }
 #podcast .title h1 {
-    color: #B168EB;
+    color: #E42F2F;
 }
 /* FOOTER */
 #footer {
@@ -220,4 +220,21 @@ body {
   #git {
     justify-self: end;
     text-align: center;
+  }
+
+  /* NOTEBOOK SENAC */
+  @media(max-width: 1440px) {
+    #influencer .text {
+        width: 67vw;
+    }
+    #influencer .img {
+        margin-top: 2vh;
+    }
+    #content .img {
+        margin-top: 7vh;
+    }
+  }
+  /* CELULAR */
+  @media(max-width: 480px) {
+    
   }
