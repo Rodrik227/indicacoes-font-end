@@ -33,21 +33,21 @@ body {
 }
 
 /*PADRAO*/
-
 .links #youtube{
     background: none;
 }
-
 .img {
     grid-column-start: 3;
     grid-row-start: 1;
     grid-row-end: 4;
 }
 .links img{
-    width: 7vw;
-}
-.links .influencer {
     width: 4vw;
+    padding: 3px;
+    transition-duration: 1s;
+}
+.links img:hover {
+    background-color: rgba(255, 255, 255, 0.11);
 }
 
 .links {
@@ -112,12 +112,12 @@ body {
     display: grid;
     grid-template-columns: auto auto;
 }
+.links .influencer {
+    width: 4vw;
+}
 /* YOUTUBE */
 #youtube .title h1 {
     color: #92EB68;
-}
-#youtube .links img {
-    margin-left: 1vw;
 }
 #youtube {
     background: url(img/youtube.svg) no-repeat;
@@ -219,10 +219,10 @@ body {
     .img iframe{
         width: fit-content;
     }
-    * {
-        overflow-x: hidden;
-    }
     .text {
-        margin-left: 16vw;
+        width: fit-content;
+    }
+    html {
+        width: 80vw;
     }
   }     
