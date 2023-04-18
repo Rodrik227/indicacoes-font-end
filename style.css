@@ -45,6 +45,7 @@ body {
     width: 4vw;
     padding: 3px;
     transition-duration: 1s;
+    margin-left: 2vw;
 }
 .links img:hover {
     background-color: rgba(255, 255, 255, 0.11);
@@ -202,6 +203,9 @@ body {
     }
     #content .img {
         margin-top: 7vh;
+    }
+    .links img {
+        width: 5vw;
     }
   }
   /* CELULAR */
