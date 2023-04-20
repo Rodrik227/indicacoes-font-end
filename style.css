@@ -20,6 +20,7 @@ body {
     display: flex;
     background-attachment: fixed ;
     box-shadow: 3px 3px 3px 3px black;
+
 }
 #fundo h1 {
     margin:auto;
@@ -27,9 +28,31 @@ body {
     color: wheat;
     padding: 7px;
     font-size: 50px;
+    overflow: hidden;
+    position: relative;
 }
 #fundo h1 span {    
     color: #EC4C1A;    
+}
+#fundo h1::after {
+    animation: text-reveal 1.5s ease forwards;
+    background-color: black;
+    content: '';
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+@keyframes text-reveal{
+    from {
+        transform: translateX(-101%);
+    }
+    to {
+        transform: translateX(101%);
+    }
 }
 
 /*PADRAO*/
