@@ -124,6 +124,19 @@ body {
     width: 30vw;
     border-radius: 20px;
 }
+@keyframes scroll {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+.div-anime {
+    animation: scroll 1.5s;
+}
 /* INFLUENCER */
 #influencer .title h1 {
     color: #EC4C1A;
